@@ -11,7 +11,7 @@ A modern, responsive, and intuitive Age Calculator web application built with HT
 
 ## 🚀 Live Demo
 
-🔗 **Live Application:** [https://YOUR_GITHUB_USERNAME.github.io/age-calculator-app/](https://madinatinkory.github.io/Age-Calculator/)
+🔗 **Live Application:** [https://madinatinkory.github.io/Age-Calculator/]
 
 ---
 
