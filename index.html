@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator | Metabox Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Age Calculator</h1>
+      <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+    </header>
+
+    <form id="ageForm" novalidate>
+      <div class="input-group">
+        <div class="field">
+          <label for="day">DAY</label>
+          <input type="number" id="day" placeholder="DD" min="1" max="31">
+          <small class="error-msg"></small>
+        </div>
+        <div class="field">
+          <label for="month">MONTH</label>
+          <input type="number" id="month" placeholder="MM" min="1" max="12">
+          <small class="error-msg"></small>
+        </div>
+        <div class="field">
+          <label for="year">YEAR</label>
+          <input type="number" id="year" placeholder="YYYY" min="1900">
+          <small class="error-msg"></small>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn" id="calcBtn">
+        <span>Calculate Age</span>
+      </button>
+    </form>
+
+    <div class="results">
+      <p><span id="resYears">--</span> years</p>
+      <p><span id="resMonths">--</span> months</p>
+      <p><span id="resDays">--</span> days</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

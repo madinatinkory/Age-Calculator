@@ -1,0 +1,39 @@
+:root {
+  --bg: #f4f6fb;
+  --card-bg: #ffffff;
+  --text: #1a1d2e;
+  --primary: #4f46e5;
+  --border: #e2e8f0;
+  --error: #ef4444;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #f8fafc;
+  --border: #334155;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; transition: background 0.3s, color 0.3s; }
+body { background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+.container { background: var(--card-bg); width: 100%; max-width: 480px; padding: 32px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid var(--border); }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+#themeToggle { background: none; border: 1px solid var(--border); font-size: 18px; padding: 8px 12px; border-radius: 10px; cursor: pointer; color: var(--text); }
+
+.input-group { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+.field { display: flex; flex-direction: column; }
+label { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #64748b; margin-bottom: 6px; }
+input { padding: 12px; border-radius: 8px; border: 1px solid var(--border); font-size: 18px; font-weight: 600; outline: none; background: transparent; color: var(--text); }
+input:focus { border-color: var(--primary); }
+.error-msg { color: var(--error); font-size: 11px; margin-top: 4px; min-height: 14px; }
+
+.field.invalid label { color: var(--error); }
+.field.invalid input { border-color: var(--error); }
+
+.submit-btn { width: 100%; padding: 14px; background: var(--primary); color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; }
+.submit-btn:hover { opacity: 0.9; }
+
+.results { margin-top: 32px; border-top: 1px solid var(--border); padding-top: 24px; }
+.results p { font-size: 36px; font-weight: 800; font-style: italic; }
+.results span { color: var(--primary); font-style: normal; }
